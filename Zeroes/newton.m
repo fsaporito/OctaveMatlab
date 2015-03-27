@@ -46,7 +46,7 @@ do
 	derivata_seed=6*a*(seed^5) + 5*b*(seed^4) + 4*c*(seed^3) + 3*d*(seed^2) + 2*e*seed + f;
 	
 	% x(0) = a - f(a)/f'(a)
-	zero=( seed - (immagine_seed/derivata_seed);
+	zero=( seed - (immagine_seed/derivata_seed) );
 	
 	% Immagine Punto D'Intersezione
 	ZERO=( a*(m^6) + b*(m^5) + c*(m^4) + d*(m^3) + e*(m*2) + f*m + g ); 
