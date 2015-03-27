@@ -4,13 +4,13 @@ function succ_e
 
 clc
 
-disp ("Questo Script Calcola Il Valore Del Numero Di Nepero e, definito come : ")
-disp ("e = sommatoria da n=0 a n=infinito di 1/n! (n! ---> fattoriale)")
+disp ('Questo Script Calcola Il Valore Del Numero Di Nepero e, definito come : ')
+disp ('e = sommatoria da n=0 a n=infinito di 1/n! (n! ---> fattoriale)')
 
-disp ("")
+disp ('')
 
 % Inserimento Del Coefficente Richiesto
-n=input("Inserisci Il Numero Di Valori Della Successione Per Calcolare e : ");
+n=input('Inserisci Il Numero Di Valori Della Successione Per Calcolare e : ');
 
 nep=0;
 
@@ -22,6 +22,6 @@ end
 
 % Output
 format long
-printf ("e = "), disp(nep)
+printf ('e = '), disp(nep)
 
 endfunction

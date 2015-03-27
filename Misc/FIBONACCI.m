@@ -5,10 +5,10 @@ function FIBONACCI
 clc
 
 % Input
-a=input("Write The Position Requested: ");
+a=input('Write The Position Requested: ');
 
 % Number Calculation
 [f]=fib(a);
 
 % Output
-printf ("The Requested Number Is: "),disp(f)
+printf ('The Requested Number Is: '),disp(f)

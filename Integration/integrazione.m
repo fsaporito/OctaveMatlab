@@ -2,29 +2,29 @@ function integrazione
 
 clc
 
-disp("Questo Script Calcola gli Zeri Approssimati Di Una Funzione Polinomiale Data")
-disp("")
+disp('Questo Script Calcola gli Zeri Approssimati Di Una Funzione Polinomiale Data')
+disp('')
 
 % Inserimento Grado Polinomio
 do
-	n=input("Inserisci il grado del polinomio richiesto, positivo ed intero : ");
+	n=input('Inserisci il grado del polinomio richiesto, positivo ed intero : ');
 until ( n > 0 )
 
 % Inserimento Coefficenti
-disp ("")
-disp("Inserisci I Coefficenti Partendo Dal Termine Noto : ")
+disp ('')
+disp('Inserisci I Coefficenti Partendo Dal Termine Noto : ')
 for a=1:(n+1) % (n+1) perchè octave parte da 1 nel conto dei vettori
-	V(a)=input(sprintf("a[%o]=",a));
+	V(a)=input(sdisp('a[%o]=',a));
 end
 
 % Inserimento Del Valore Minimo Dell'Intervallo 
-	a=input("Inserisci il valore del minimo dell'intervallo : ");
+	a=input('Inserisci il valore del minimo dell'intervallo : ');
 
 % Inserimento Del Valore Massimo Dell'Intervallo 
-	b=input("Inserisci il valore del massimo dell'intervallo : ");
+	b=input('Inserisci il valore del massimo dell'intervallo : ');
 	
 % Inserimento Numero Intervalli
-	intervalli=input("Inserisci Il Numero Di Intervalli : ");
+	intervalli=input('Inserisci Il Numero Di Intervalli : ');
 	
 % Menu
 choice=0;
@@ -33,11 +33,11 @@ trapezi=2;
 parabole=3;
 do
 	clc
-	printf ("Opzioni : \n\n")
-	printf ("1) Metodo Dei Rettangoli\n")
-	printf ("2) Metodo Dei Trapezi\n")
-	printf ("3) Metodo Delle Parabole\n\n")
-	choice=input("Inserisci 1, 2 o 3 In Base Alla Tua Scelta : ");
+	disp ('Opzioni : \n\n')
+	disp ('1) Metodo Dei Rettangoli\n')
+	disp ('2) Metodo Dei Trapezi\n')
+	disp ('3) Metodo Delle Parabole\n\n')
+	choice=input('Inserisci 1, 2 o 3 In Base Alla Tua Scelta : ');
 until ( choice == rettangoli || choice == trapezi || choice == parabole)
 
 if [ choice == rettangoli ]
@@ -184,14 +184,14 @@ if [ choice == parabole ]
 end
 
 clc
-printf ("Estremo a : "),disp(a)
-printf ("F(a) : "),disp(funz_a)
-printf ("Estremo b : "),disp(b)
-printf ("F(b) : "),disp(funz_b)
-printf ("Numero Intervalli : "),disp(intervalli)
+disp ('Estremo a : '),disp(a)
+disp ('F(a) : '),disp(funz_a)
+disp ('Estremo b : '),disp(b)
+disp ('F(b) : '),disp(funz_b)
+disp ('Numero Intervalli : '),disp(intervalli)
 format long
-printf ("S_dispari : "),disp(S_dispari)
-printf ("S_pari : "),disp(S_pari)
-printf ("Integrale : "),disp(integrale)
+disp ('S_dispari : '),disp(S_dispari)
+disp ('S_pari : '),disp(S_pari)
+disp ('Integrale : '),disp(integrale)
 
 endfunction

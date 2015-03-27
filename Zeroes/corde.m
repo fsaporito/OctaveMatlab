@@ -2,21 +2,21 @@ function corde
 
 clc
 
-disp("Questo Script Calcola gli Zeri Approssimati Di Una Funzione Data Di Quinto Grado")
-disp("")
+disp('Questo Script Calcola gli Zeri Approssimati Di Una Funzione Data Di Quinto Grado')
+disp('')
 
 % Inserimento Coefficenti
-a=input("Inserisci il coefficente dell'incognita' di quinto grado : ");
+a=input('Inserisci il coefficente dell''incognita'' di quinto grado : ');
 
-b=input("Inserisci il coefficente dell'incognita' di quarto grado : ");
+b=input('Inserisci il coefficente dell''incognita'' di quarto grado : ');
 
-c=input("Inserisci il coefficente dell'incognita' di terzo grado : ");
+c=input('Inserisci il coefficente dell''incognita'' di terzo grado : ');
 
-d=input("Inserisci il coefficente dell'incognita' di secondo grado : ");
+d=input('Inserisci il coefficente dell''incognita'' di secondo grado : ');
 
-e=input("Inserisci il coefficente dell'incognita' di primo grado : ");
+e=input('Inserisci il coefficente dell''incognita'' di primo grado : ');
 
-g=input("Inserisci il coefficente del termine noto : ");
+g=input('Inserisci il coefficente del termine noto : ');
 
 do
 
@@ -24,13 +24,13 @@ do
 	
 	% Inserimento Primo Punto
 	do
-		f=input("Inserisci il valore dell'ascissa del primo punto : ");
-	until ( f != 0 ) % L'ascissa Del Punto Deve Essere Diversa Da Zero
+		f=input('Inserisci il valore dell''ascissa del primo punto : ');
+	until ( f ~= 0 ) % L'ascissa Del Punto Deve Essere Diversa Da Zero
 
 	% Inserimento Secondo Punto
 	do
-		s=input("Inserisci il valore dell'ascissa del secondo punto : ");
-	until ( s != 0 ) % L'ascissa Del Punto Deve Essere Diversa Da Zero
+		s=input('Inserisci il valore dell''ascissa del secondo punto : ');
+	until ( s ~= 0 ) % L'ascissa Del Punto Deve Essere Diversa Da Zero
 
 	% Immagine Primo Punto
 	F=( a*(f^5) + b*(f^4) + c*(f^3) + d*(f^2) + e*f + g )
@@ -40,16 +40,16 @@ do
 
 	% Verifica Condizione Di Discordità Tra I Due Punti
 	if ( F*S > 0 )
-		disp("error: Le Immagini Dei Valori Devono Essere Discordi !!!")
+		disp('error: Le Immagini Dei Valori Devono Essere Discordi !!!')
 		k=3;
 	else
 		% Ciclo Per L'Inserimento Della Precisione
 		do
-			z=input("Inserisci Il valore di Epsilon, positivo e piccolo a piacere : ");
+			z=input('Inserisci Il valore di Epsilon, positivo e piccolo a piacere : ');
 		until z>0
 		
 		% Ciclo Per Il Calcolo Del Punto Medio
-		disp("Calculating ...")
+		disp('Calculating ...')
 		
 		do 
 			
@@ -83,9 +83,9 @@ until ( k < 2)
 
 % Visualizzazione Punto Medio
 format long
-printf ("Il valore approssimato dello zero e' : "),disp(p)
+printf ('Il valore approssimato dello zero e'' : '),disp(p)
 
-disp("")
+disp('')
 
 endfunction
 

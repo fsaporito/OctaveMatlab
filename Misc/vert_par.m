@@ -4,9 +4,9 @@ function Vert
 clc
 
 % Inserimento Coefficenti
-a=input("Il valore di a e': ")
-b=input("Il valore di b e': ")
-c=input("Il valore di c e': ")
+a=input('Il valore di a e'': ')
+b=input('Il valore di b e'': ')
+c=input('Il valore di c e': ')
 
 % Calcolo Vertice
 X=-2*a/b;
@@ -17,7 +17,7 @@ h=-X;
 k=-Y;
 
 % Output
-disp ("")
-disp("Le coordinate del vertice sono: "),disp (X),disp (Y)
-disp ("")
-disp("Le coordinate del simmetrico del vertice sono: "),disp (h),disp (k)
+disp ('')
+disp('Le coordinate del vertice sono: '),disp (X),disp (Y)
+disp ('')
+disp('Le coordinate del simmetrico del vertice sono: '),disp (h),disp (k)

@@ -5,17 +5,17 @@ function prog_geom
 
 clc
 
-disp ("Questo Script Calcola La Somma Di Tutti I Termini Fino Ad Un Valore Prestabilito")
-disp ("Di Una Progressione Geometrica Dati La Ragione E Il Valore Iniziale")
+disp ('Questo Script Calcola La Somma Di Tutti I Termini Fino Ad Un Valore Prestabilito')
+disp ('Di Una Progressione Geometrica Dati La Ragione E Il Valore Iniziale')
 
-disp ("")
+disp ('')
 
 % Inserimento Valori
-a(1)=input("Inserisci Il Valore Iniziale : ");
-ragione=input("Inserisci La Ragione Della Progressione : ");
-n=input("Inserisci Il Valore Massimo Della Progressione : ");
+a(1)=input('Inserisci Il Valore Iniziale : ');
+ragione=input('Inserisci La Ragione Della Progressione : ');
+n=input('Inserisci Il Valore Massimo Della Progressione : ');
 
-disp ("")
+disp ('')
 
 % Calcolo Somma Valori
 
@@ -27,6 +27,6 @@ do
 	b=(b+1);
 until (a(b-1) > n)
 
-printf ("Somma = "), disp(somma)
+printf ('Somma = '), disp(somma)
 
 endfunction

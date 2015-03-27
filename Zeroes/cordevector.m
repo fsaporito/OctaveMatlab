@@ -2,19 +2,19 @@ function cordevector
 
 clc
 
-disp("Questo Script Calcola gli Zeri Approssimati Di Una Funzione Polinomiale Data")
-disp("")
+disp('Questo Script Calcola gli Zeri Approssimati Di Una Funzione Polinomiale Data')
+disp('')
 
 % Inserimento Grado Polinomio
 do
-	n=input("Inserisci il grado del polinomio richiesto, positivo ed intero : ");
+	n=input('Inserisci il grado del polinomio richiesto, positivo ed intero : ');
 until ( n > 0 )
 
 % Inserimento Coefficenti
-disp ("")
-disp("Inserisci I Coefficenti Partendo Dal Termine Noto : ")
-for a=1:(n+1) % (n+1) perchè octave parte da 1 nel conto dei vettori
-	V(a)=input(sprintf("a[%o]=",a));
+disp ('')
+disp('Inserisci I Coefficenti Partendo Dal Termine Noto : ')
+for a=1:(n+1) % (n+1) perchè octave parte da 1 nel conto ei vettori
+	V(a)=input(sprintf('a[%o]=',a));
 end
 
 % Ciclo Per Il Calcolo Dello Zero
@@ -24,13 +24,13 @@ do
 	
 	% Inserimento Primo Punto
 	do
-		f=input("Inserisci il valore dell'ascissa del primo punto : ");
-	until ( f != 0 ) % L'ascissa Del Punto Deve Essere Diversa Da Zero
+		f=input('Inserisci il valore dell''ascissa del primo punto : ');
+	until ( f ~= 0 ) % L'ascissa Del Punto Deve Essere Diversa Da Zero
 	
 	% Inserimento Secondo Punto
 	do
-		s=input("Inserisci il valore dell'ascissa del secondo punto : ");
-	until ( s != 0 ) % L'ascissa Del Punto Deve Essere Diversa Da Zero
+		s=input('Inserisci il valore dell''ascissa del secondo punto : ');
+	until ( s ~= 0 ) % L'ascissa Del Punto Deve Essere Diversa Da Zero
 
 	% Immagine Primo Punto
 	F=0;
@@ -53,16 +53,16 @@ do
 	
 	% Verifica Condizione Di Discordità Tra I Due Punti
 	if ( F*S > 0 )
-		disp("error: Le Immagini Dei Valori Devono Essere Discordi !!!")
+		disp('error: Le Immagini Dei Valori Devono Essere Discordi !!!')
 		k=3;
 	else
 		% Ciclo Per L'Inserimento Della Precisione
 		do
-			z=input("Inserisci Il valore di Epsilon, positivo e piccolo a piacere : ");
+			z=input('Inserisci Il valore di Epsilon, positivo e piccolo a piacere : ');
 		until z>0
 		
 		% Ciclo Per Il Calcolo Del Punto Medio
-		disp("Calculating ...")
+		disp('Calculating ...')
 		
 		do 
 			
@@ -105,14 +105,14 @@ do
 		
 		k=1; % Valore Di Break Del Ciclo
 		
-	endif
+    end
 
 until ( k < 2 )
 
 % Visualizzazione Punto Medio
 format long
-printf ("Il valore approssimato dello zero e' : "),disp(p)
+printf ('Il valore approssimato dello zero e'' : '),disp(p)
 
-disp ("")
+disp ('')
 
 endfunction

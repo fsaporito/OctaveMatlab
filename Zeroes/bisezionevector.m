@@ -2,19 +2,19 @@ function bisezionevector
 
 clc
 
-disp("Questo Script Calcola gli Zeri Approssimati Di Una Funzione Polinomiale Data")
-disp("")
+disp('Questo Script Calcola gli Zeri Approssimati Di Una Funzione Polinomiale Data')
+disp('')
 
 % Inserimento Grado Polinomio
 do
-	n=input("Inserisci il grado del polinomio richiesto, positivo ed intero : ");
+	n=input('Inserisci il grado del polinomio richiesto, positivo ed intero : ');
 until ( n > 0 )
 
 % Inserimento Coefficenti
-disp ("")
-disp("Inserisci I Coefficenti Partendo Dal Termine Noto : ")
+disp ('')
+disp('Inserisci I Coefficenti Partendo Dal Termine Noto : ')
 for a=1:(n+1) % (n+1) perchè octave parte da 1 nel conto dei vettori
-	V(a)=input(sprintf("a[%o]=",a));
+	V(a)=input(sprintf('a[%o]=',a));
 end
 
 % Ciclo Per Il Calcolo Dello Zero
@@ -24,13 +24,13 @@ do
 	
 	% Ciclo Per L'Inserimento Del Valore Minimo Dell'Intervallo 
 	do
-		p=input("Inserisci il valore del minimo dell'intervallo : ");
-	until ( p != 0 ) % Il Minimo Deve Essere Diverso Da Zero
+		p=input('Inserisci il valore del minimo dell''intervallo : ');
+	until ( p ~= 0 ) % Il Minimo Deve Essere Diverso Da Zero
 	
 	% Ciclo Per L'Inserimento Del Valore Massimo Dell'Intervallo 
 	do
-		q=input("Inserisci il valore del massimo dell'intervallo : ");
-	until ( q != 0 ) % Il Minimo Deve Essere Diverso Da Zero
+		q=input('Inserisci il valore del massimo dell''intervallo : ');
+	until ( q ~= 0 ) % Il Minimo Deve Essere Diverso Da Zero
 
 	% Calcolo Dell'Immagine Del Valore Minimo E Massimo
 	
@@ -52,18 +52,18 @@ do
 	
 	% Verifica Condizione Di Discordità Tra Massimo E Minimo
 	if ( P*Q > 0 )
-		disp("error: Le Immagini Dei Valori Devono Essere Discordi !!!")
+		disp('error: Le Immagini Dei Valori Devono Essere Discordi !!!')
 		k=3;
 	else
 		% Ciclo Per L'Inserimento Della Precisione
 		do
-			z=input("Inserisci Il valore di Epsilon, positivo e piccolo a piacere : ");
+			z=input('Inserisci Il valore di Epsilon, positivo e piccolo a piacere : ');
 		until z>0
 		
 		clc
 		
 		% Ciclo Per Il Calcolo Del Punto Medio
-		disp("Calculating ...")
+		disp('Calculating ...')
 		
 		do 
 			% Minimo
@@ -111,8 +111,8 @@ until ( k < 2 )
 
 % Visualizzazione Punto Medio
 format long
-printf ("Il valore approssimato dello zero e' : "),disp(m)
+printf ('Il valore approssimato dello zero e'' : '),disp(m)
 
-disp ("")
+disp ('')
 
 endfunction

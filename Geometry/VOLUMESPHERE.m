@@ -4,8 +4,8 @@ function VOLUMESPHERE
 
 clc
 
-disp("This program calculates the volume of a sphere, given the radix")
-disp("")
+disp('This program calculates the volume of a sphere, given the radix')
+disp('')
 
 % Input
 r=input('Input the radix:');
@@ -14,6 +14,6 @@ r=input('Input the radix:');
 V=4/3*pi*r^3;
 
 % Output
-printf ("Volume': "),disp(V)
+printf ('Volume': '),disp(V)
  
 endfunction

@@ -2,14 +2,14 @@ function quad
 
 clc
 
-disp("This Program Calculate The Quadrate Of A Natural Number n Adding All The n Eaven Number")
+disp('This Program Calculate The Quadrate Of A Natural Number n Adding All The n Eaven Number')
 
 % Inp
 do	
-	disp("")
-	n=input("Input The Natural Number: ")
+	disp('')
+	n=input('Input The Natural Number: ')
 	if ( n <= 0 )
-		disp ("error: the number is not natural !!!")
+		disp ('error: the number is not natural !!!')
 	end
 until ( n>0 )
 	
@@ -24,6 +24,6 @@ while (k!=1)
 end
 
 % Output
-prinf ("Resultate : "),disp(q)
+prinf ('Resultate : '),disp(q)
 
 endfunction

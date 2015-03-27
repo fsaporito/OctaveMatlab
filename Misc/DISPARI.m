@@ -2,10 +2,10 @@ function DISPARI
 
 clc
 
-disp("This Script Output The Number Of Uneven Numbers Minor Than Input Expect Seven Multiplies")
-disp ("")
+disp('This Script Output The Number Of Uneven Numbers Minor Than Input Expect Seven Multiplies')
+disp ('')
 
-k=input("Insert The Maximus Value : ");
+k=input('Insert The Maximus Value : ');
 n=0;
 
 for I=1:(k-1)
@@ -17,4 +17,6 @@ end
 
 disp('I numeri dispari minori di 100 che non sono multipli di 7 sono: ')
 disp(n)
+
+endfunction
 

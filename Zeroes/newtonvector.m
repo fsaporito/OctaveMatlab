@@ -2,35 +2,35 @@ function newtonvector
 
 clc
 
-disp("Questo Script Calcola gli Zeri Approssimati Di Una Funzione Polinomiale Data")
-disp("")
+disp('Questo Script Calcola gli Zeri Approssimati Di Una Funzione Polinomiale Data')
+disp('')
 
 % Inserimento Grado Polinomio
 do
-	n=input("Inserisci il grado del polinomio richiesto, positivo ed intero : ");
+	n=input('Inserisci il grado del polinomio richiesto, positivo ed intero : ');
 until ( n > 0 )
 
 % Inserimento Coefficenti
-disp ("")
-disp("Inserisci I Coefficenti Partendo Dal Termine Noto : ")
+disp ('')
+disp('Inserisci I Coefficenti Partendo Dal Termine Noto : ')
 for a=1:(n+1) % (n+1) perchè octave parte da 1 nel conto dei vettori
-	V(a)=input(sprintf("a[%o]=",a));
+	V(a)=input(sprintf('a[%o]=',a));
 end
 
 % Ciclo Per L'Inserimento Del Valore Minimo Dell'Intervallo 
 do
-	seed=input("Inserisci Il Seme : ");
-until ( seed != 0 ) % Il Seme Deve Essere Diverso Da Zero
+	seed=input('Inserisci Il Seme : ');
+until ( seed ~= 0 ) % Il Seme Deve Essere Diverso Da Zero
 
 % Ciclo Per L'Inserimento Della Precisione
 do
-	precision=input("Inserisci Il valore di Epsilon, positivo e piccolo a piacere : ");
+	precision=input('Inserisci Il valore di Epsilon, positivo e piccolo a piacere : ');
 until precision>0
 		
 clc
 		
 % Ciclo Per Il Calcolo Del Punto Medio
-disp("Calculating ...")
+disp('Calculating ...')
 		
 % Calcolo Derivata
 % D(m*x^n) = m*n*x^(n-1)
@@ -73,9 +73,9 @@ until ( abs(INTERSEZIONE) < precision )
 		
 % Visualizzazione Valore Intersezione
 format long
-printf ("Il valore approssimato dello zero e' : "),disp(intersezione)
+printf ('Il valore approssimato dello zero e'' : '),disp(intersezione)
 
-disp ("")
+disp ('')
 
 endfunction
 

@@ -5,13 +5,13 @@ function rapporto_incr_sin
 
 clc
 
-disp("Questo Script Calcola I Valori Del Rapporto Incrementale Per")
-disp("y=sinx con 0 < X < PiGreco, h=0.001") 
-disp("")
+disp('Questo Script Calcola I Valori Del Rapporto Incrementale Per')
+disp('y=sinx con 0 < X < PiGreco, h=0.001') 
+disp('')
 
 % Inserimento Valori
-passo=input("Inserisci Il passo : ");
-h=input("Inserisci L'incremento (h) : ");
+passo=input('Inserisci Il passo : ');
+h=input('Inserisci L'incremento (h) : ');
 
 % Calcolo Valori
 x(1)=0;
@@ -24,7 +24,7 @@ do
 until ( x(i-1) > pi )
 
 % Plot
-disp ("Plotting ...")
+disp ('Plotting ...')
 plot(x,rapp,"*")
 
 endfunction
